@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn import linear_model
 import matplotlib.pyplot as plt
 
-df1=pd.read_csv("C:/Users/yogesh/Desktop/Machine Learning/new.csv")
+df1=pd.read_csv("new.csv")
 print(df1)
 
 
@@ -25,11 +25,11 @@ for i in range(len(test)):
     #print(type(c))
     a.append(b[0])
 
-#print(a)
+print(a)
 df = pd.DataFrame()
 df['Area'] = test[0::]
 df['Price'] = a[0::]
-df.to_csv('C:/Users/yogesh/Desktop/Machine Learning/new123.csv', index = False)
+#df.to_csv("new123.csv", index = False)
 
 plt.scatter(df.Area, df.Price)
 plt.plot(df1.Area, df1.Price)
